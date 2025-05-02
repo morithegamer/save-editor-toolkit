@@ -44,3 +44,56 @@ pip install -r requirements.txt
 ## 🔒 Disclaimer
 
 This tool is intended for personal use and education. Do not use to cheat in multiplayer environments or commercial versions without permission.
+
+## 🖥️ OS Support
+
+This tool works on:
+- 🐧 Linux (including Steam Deck & SteamOS)
+- 🍎 macOS
+- 🪟 Windows
+
+### Requirements
+- Python 3.8+
+- Tkinter (usually preinstalled)
+- pyamf
+
+### Run it on Linux/macOS:
+```bash
+pip install -r requirements.txt
+python papas_jacksmith_editor_github.py
+```
+
+### Notes for Linux / Steam Deck
+If you’re on Steam Deck or any Linux distro:
+```bash
+sudo apt install python3 python3-tk
+pip install pyamf
+```
+
+### Notes for macOS Users
+If `tkinter` is not working, install with:
+```bash
+brew install python-tk
+```
+
+Make sure Gatekeeper allows running unsigned Python scripts (System Preferences > Security).
+
+## 🔒 Trust & Safety
+
+This project is 100% open-source and transparent.
+
+- 🔍 No malware, spyware, or hidden scripts
+- 🛠️ Built using Python and open libraries only
+- 📂 All code is available in this repository for review
+
+If you’re downloading a precompiled `.exe`, you can:
+- Verify it matches the source code here
+- Scan it with [VirusTotal](https://www.virustotal.com/)
+- Or build your own using `pyinstaller`:
+
+```bash
+pip install pyinstaller
+pyinstaller --onefile papas_jacksmith_editor_github.py
+```
+
+We respect your trust. This is for fans, by fans 💙
