@@ -1,99 +1,62 @@
-# Papa's + Jacksmith Save Editor Toolkit
 
-This is a desktop save file editor for **Flipline Studios** games such as:
-- Papa's Pizzeria DX
-- Papa's Freezeria DX
-- Jacksmith (coming soon — PC/Steam version support)
+# Papa's Save Editor Toolkit (Multi-Game Ultimate Edition)
 
-It allows editing of key game data such as:
-- Money
-- Season
-- Tickets
-- Stars
-- Stickers
-- Unlocking all minigames
-- Unlocking all ingredients
+Welcome to the **Papa's Save Editor Toolkit**, an all-in-one save editor for popular **Flipline Studios** games including:
+- 🧙 **JackSmith (PC/Steam)** - Fully Supported! 🔥
+- 🍕 **Papa's Pizzeria DX**
+- 🍦 **Papa's Freezeria DX**
 
-## 🎮 How to Use
+## 🎮 Ultimate Features
+This toolkit lets you easily edit and unlock key game data such as:
+- 💰 Money / Gold (Instantly increase your funds)
+- ⭐ Stars / Stickers / Tickets (Customize your progress)
+- 🍕 Ingredients / Items (Complete ingredient list)
+- 🔓 Unlock All Content (Craft recipes, minigames, special recipes)
 
-1. Run the script:
-```bash
-python papas_jacksmith_editor_github.py
-```
-
-2. Select your game from the dropdown.
-3. Choose the input `.sol` file from your local system.
-4. Set output location, modify your save, and click "Apply Changes".
-5. A backup of your original file is automatically created.
-
-> NOTE: Jacksmith editing will activate once the Steam version's save format is confirmed after release (May 13, 2025).
+## 🚀 How to Use
+1. **Run the script:**
+   ```bash
+   python papas_jacksmith_editor_github.py
+   ```
+2. **Select your game:** (JackSmith, Pizzeria, or Freezeria) using the text menu.
+3. **Real-Time Editing:** Modify values live and see the changes instantly.
+4. **Choose your edits (money, stars, recipes, etc.) and apply changes.**
+5. **A backup of your original file is automatically created.**
 
 ## 🧰 Requirements
+- Python 3.8+
+- Required Packages (install using):
+  ```bash
+  pip install -r requirements.txt
+  ```
 
-Install dependencies:
+## 📁 Supported Save Files
+- `.sol` files for Papa's Pizzeria DX and Freezeria DX.
+- `.json` files for JackSmith (PC/Steam version).
 
-```bash
-pip install -r requirements.txt
-```
-
-## 📁 File Compatibility
-
-- `.sol` files from Adobe Flash Local Shared Objects or remastered DX versions.
-- Ensure you have a backup of your saves!
+## 📌 Customization
+- Background Image: 'background.png' (included).
+- Icon: 'icon.ico' (included).
 
 ## 🔒 Disclaimer
+This toolkit is intended for personal use and educational purposes only. Do not use to cheat in multiplayer environments or violate game policies.
 
-This tool is intended for personal use and education. Do not use to cheat in multiplayer environments or commercial versions without permission.
-
-## 🖥️ OS Support
-
-This tool works on:
+## 💡 Supported Platforms
 - 🐧 Linux (including Steam Deck & SteamOS)
 - 🍎 macOS
 - 🪟 Windows
 
-### Requirements
-- Python 3.8+
-- Tkinter (usually preinstalled)
-- pyamf
+### 🔧 Advanced Features
+- Auto-Backup: Creates timestamped backups of your save files.
+- Real-Time Editing: See your values change live as you edit.
+- Multi-Game Support: JackSmith, Freezeria, and Pizzeria.
+- Clean, Console-Based Interface: No complex GUI, just efficient text commands.
 
-### Run it on Linux/macOS:
-```bash
-pip install -r requirements.txt
-python papas_jacksmith_editor_github.py
-```
-
-### Notes for Linux / Steam Deck
-If you’re on Steam Deck or any Linux distro:
-```bash
-sudo apt install python3 python3-tk
-pip install pyamf
-```
-
-### Notes for macOS Users
-If `tkinter` is not working, install with:
-```bash
-brew install python-tk
-```
-
-Make sure Gatekeeper allows running unsigned Python scripts (System Preferences > Security).
-
-## 🔒 Trust & Safety
-
-This project is 100% open-source and transparent.
-
-- 🔍 No malware, spyware, or hidden scripts
-- 🛠️ Built using Python and open libraries only
-- 📂 All code is available in this repository for review
-
-If you’re downloading a precompiled `.exe`, you can:
-- Verify it matches the source code here
-- Scan it with [VirusTotal](https://www.virustotal.com/)
-- Or build your own using `pyinstaller`:
-
+## 🚀 Building a Standalone EXE
+To compile this tool into a standalone `.exe` file for Windows:
 ```bash
 pip install pyinstaller
-pyinstaller --onefile papas_jacksmith_editor_github.py
+pyinstaller --onefile --icon=icon.ico papas_jacksmith_editor_github.py
 ```
 
-We respect your trust. This is for fans, by fans 💙
+We respect your trust. This is for fans, by fans. 💙🌈🐾
